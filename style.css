@@ -347,7 +347,7 @@ nav ul li {
         display: none;
     } 
     #texTitle {
-        top: 51%;
+        top: 30%;
     }
     .line-effecAbout::after {
         left: 70%;
