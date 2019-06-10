@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="grillas.css">
-    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.pagepiling.js"></script>
-    <script type="text/javascript" src="main.js" ></script>
+        <meta charset="utf-8" lang="es">
+        
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Import Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- enlace boostra -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- responsive mobile-first -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- pagepiling library -->
+        <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+        <!-- Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!-- Animate css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="grillas.css">
+        <!-- pagepiling library -->
+        <script type="text/javascript" src="jquery.pagepiling.js"></script> 
+        <script type="text/javascript" src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
     
     <div id="pagepiling">
-            <div class="section home-area " id="home">
+            
+        <div class="section home-area " id="home">
                 <div class="wrapper">
                     <nav>
                         <ul id="myMenu">
@@ -33,22 +43,39 @@
                     </nav>
                 </div>
             </div>
-
-            <div class="section about-area"  id="about"  >
-                <div class="row" id="about-title" >
-                    <div id="about-content" >
-                        <div  class="line-effec" id="aboutMe">Sobre Mi</div>
-                            <div id="aboutTex"><p>¡Hola! mi nombre es Verioska Ramírez, tengo 25 años, soy Front End Developer. Durante mis proyectos he logrado ser autodidacta, perseverantey tener habilidades para resolución de problemas. Me caracterizo por ser
-                                una persona muy sociable, positiva y me adapto fácilmente a grupos de trabajo.<br><br>Disfruto el aprendizaje constante.</p> 
-                            </div>
-                            <div >
-                                <img id="img"src="./Imagenes/yo11.png">
-                            </div>
+        
+            <div class="section container">
+                <div class="row" id="about">
+                    <div id="about-content" class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="line-effecAbout"></div>
+                        <div id="texTitle">Sobre Mi</div>
+                            <div id="aboutTex"><p id="texMe">¡Hola! mi nombre es Verioska Ramírez, tengo 25 años, soy Front End Developer. Durante mis proyectos he logrado ser autodidacta, perseverantey tener habilidades para resolución de problemas. Me caracterizo por ser
+                                    una persona muy sociable, positiva y me adapto fácilmente a grupos de trabajo.<br><br>Disfruto el aprendizaje constante.</p> 
+                            </div> 
+                                <div>
+                                    <img id="img"src="./Imagenes/yo11.png">
+                                </div>
                     </div>
                 </div>
             </div>
 
-            <div class="section skills-area" id="skills">
+                       
+                        <!-- <div id="about-content" class="col">
+                            <div  class="line-effec" id="aboutMe">Sobre Mi</div>
+                                <div id="aboutTex"><p>¡Hola! mi nombre es Verioska Ramírez, tengo 25 años, soy Front End Developer. Durante mis proyectos he logrado ser autodidacta, perseverantey tener habilidades para resolución de problemas. Me caracterizo por ser
+                                    una persona muy sociable, positiva y me adapto fácilmente a grupos de trabajo.<br><br>Disfruto el aprendizaje constante.</p> 
+                                </div>
+                                <div >
+                                   
+                                    <img id="img"src="./Imagenes/yo11.png">
+                                </div>
+                        </div> -->
+                    </div>
+                </div>
+
+          
+
+    <!--                    <div class="section skills-area" id="skills">
                 <div class="row" id="skill-title" >
                     <div id="skill-content" >
                         <div  class="line-skill skillmedia line-media" id="skillMe">Habilidades</div>
@@ -68,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="section projects-area" id="projects">
+            <div class="section container" id="projects">
                 <div class="row" id="skill-title" >
                     <div id="skill-content" >
                         <div  class="line-skill" id="skillMe">Proyectos</div>
@@ -134,7 +161,10 @@
                         </div>
                     </div>
             </div>
-        </div>
- <div>
+        </div> -->
+<div>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

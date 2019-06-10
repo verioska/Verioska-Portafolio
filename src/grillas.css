@@ -1,5 +1,27 @@
+/* Estilos globales */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 * {
     box-sizing: border-box;
+}
+html{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.row-pure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 [class*="col-"] {
     min-height: 7px;
