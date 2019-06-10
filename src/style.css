@@ -408,20 +408,25 @@ nav ul li {
 }
 @media only screen and (min-width:1901px){
     #img{
-        top:200%
+        top:179%
     }
     #aboutTex {
-        top: 510%;
+        top: 330%;
+        width: 42%;
       
     }
+    #texMe{
+        font-size: 25px
+    }
     #texTitle{
-        top:182%;
+        top:104%;
+        font-size: 500%
     }
     .line-effecAbout::before {
-        right: 54%;
+        right: 59%;
     }
     .line-effecAbout::after {
-        left: 54%;
+        left: 59%;
         
     }
     .line-effecAbout::after,.line-effecAbout::before{
