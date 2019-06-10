@@ -376,6 +376,33 @@ nav ul li {
     
 .line-effecAbout::after,.line-effecAbout::before{
  
-    top: 4.9em;
+    top: 4.0em;
  }
 } 
+@media only screen and (min-width:768px)and (max-width:1200px){
+    #aboutTex {
+        top: 225%;
+      
+    }
+    .line-effecAbout::before {
+        right: 58%;
+    }
+    .line-effecAbout::after {
+        left: 58%;
+        
+    }
+}
+@media only screen and (min-width:1201px)and (max-width:1900px){
+    #aboutTex {
+        top: 220%;
+      
+    }
+    .line-effecAbout::before {
+        right: 57%;
+    }
+    .line-effecAbout::after {
+        left: 57%;
+        
+    }
+
+}
