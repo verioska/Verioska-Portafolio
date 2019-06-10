@@ -3,72 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 
 
-.nav{
-    display: flex;
-    justify-content: flex-start;
-    margin: 5px;
-}
-
-nav ul {
- position:fixed;
-  width: 50%;
-  list-style: none;
-  overflow: hidden;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px 20px;
-    color: #353A47;
-    font-family: Monday;
-  
-    font-size:28px
-}
-
- nav ul li a:hover{
-   color: #F7EBE8
-} 
-
-.tittle{
-    width: 100%;
-    display: flex;
-    justify-content:center; 
-    align-items: center; 
-    
-}
-
-@font-face{
-    font-family: Monday;
-    src: url(MondayBlues-Regular.ttf)
-}
-
- #p{
-    font-family: Monday;
-    font-size: 93px;
-    color: #353A47;
-    margin-top: 10px;
-    margin-left: 60px;
-}
-.book{
-    /* display: flex;
-    justify-content: flex-end;
-    width: 93%; */
-    /* height: 371px; */
-    /* margin-top: -298px; */
-
-    /* margin-bottom: -51px; */
-    /* margin: 0px; */
-    /* font-family: Monday;
-    font-size: 39px;
-    color: #353A47;  */
-/* }  */
 
 nav{
     position: absolute;
@@ -77,20 +12,18 @@ nav{
 }
 
 nav ul {
-    /* position:fixed;
-     width: 50%; */
+   
      list-style: none;
      padding: 0;
 }
 
 nav ul li {
-    /* position:fixed;
-     width: 50%; */
+
      display: inline-block;
      padding: 15px 20px;
-}
+} 
 
-nav ul li a {
+ nav ul li a {
     text-decoration: none;
     color: #353A47;
     font-family: Monday;
@@ -117,10 +50,68 @@ nav ul li a {
 
 .banner-area p{
     padding: 0 60% 0 0 
-}
+} 
 
 /* Seccion sobre mi */
 
+.container{
+    background: #fff;
+    width: 100%;
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 8%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#texTitle{
+    display:flex;
+    justify-content: center;
+    font-family: Monday;
+    color: azure;
+    font-size: 320%;
+    position: relative;
+    top: 50%;
+}
+
+.line-effecAbout::after,.line-effecAbout::before{
+    content: " ";
+    position: absolute; 
+    width: 30%;
+    height: 3px;
+    background-color: azure;
+    top: 4.2em;
+ }
+ 
+ .line-effecAbout::before {
+     width: 30%;
+     right: 58%;
+ }
+ 
+ .line-effecAbout::after {
+ 
+     left: 58%;
+     width: 30%;
+ }
+ #aboutTex {
+    top: 250%;
+    left: 36%;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    font-size: 108%;
+    color: azure;
+    width: 39%;
+    text-align: justify;
+}
+#img{
+    width: 30%;
+    position: absolute;
+    left: 10%;
+    top: 85%;
+}
+/* 
 #aboutMe{
     font-family: Monday;
     color: azure;
@@ -154,11 +145,11 @@ nav ul li a {
 }
 
 .line-effec::after {
-    /* left: -534px; */
+
     left: 58%;
     width: 30%;
-}
-#aboutTex {
+} */
+/* #aboutTex {
     top: 90%;
     left: 36%;
     font-family: 'Josefin Sans', sans-serif;
@@ -174,10 +165,10 @@ nav ul li a {
     position: absolute;
     left: 10%;
     top: 8%;
-}
+} */
 
 /* Seccion de Habilidades */
-
+/* 
 #skillMe{
     font-family: Monday;
     color: #4BBFC3;
@@ -211,11 +202,11 @@ nav ul li a {
 }
 
 .line-skill::after {
-    /* left: -534px; */
+    
     left: 58%;
     width: 30%;
-}
-
+} */
+/* 
 #icon{
     position: absolute;
     top: 213px;
@@ -241,10 +232,10 @@ nav ul li a {
     color: #353A47;
     font-weight: 300;
     text-align: justify;
-}
+} */
 
 /* Seccion Proyectos */
-
+/* 
 #imgCard{
     width: 100%;
     height: 100%;
@@ -289,12 +280,12 @@ nav ul li a {
     transition: .5s;
     box-sizing: border-box;
     padding: 20px;
-    /* text-align: center; */
+ 
     transform: translateY(100%) rotateX(-90deg);
     cursor: pointer;
-}
+} */
 
-.card:hover .details{
+/* .card:hover .details{
     transform: translateY(0%) rotateX(0deg)
 }
 
@@ -346,86 +337,40 @@ nav ul li a {
     left: 950px;
     background: #353A47;
     transform: translate(-50%,-50%);
-}
+} */
 
 /* Seccion Contacto */
 
-#iconContactMe{
-    position: absolute;
-    top:150%
-}
 
-#iconContact{
-    padding: 14px;
-    color: azure;
-    font-size: 80px
-}
-
-@media only screen and (min-width:768px) and (max-width:991px){
-
-}
-@media only screen and (max-width:767px) {
-/* .wrapper{
-        width: 90%;
-    }  */
-    /* nav{
+ @media only screen and (max-width:767px) {
+    nav{
         display: none;
-    }  */
-    #pp-nav.right {
-       
-        position: absolute;
-        top: 48%;
-        left: 335px;
+    } 
+    #texTitle {
+        top: 51%;
     }
-
-    /* seccion 2 */
-    #img {
-        display: none
-    }
-    /* .line-effec::before {
-        width: 22%;
-        right: 70%;
-    }
-    .line-effec::after{
-        width: 22%;
+    .line-effecAbout::after {
         left: 70%;
-    }
-    .line-effec::after, .line-effec::before {
-       
-        top: 1.0em;
-    }
-    #aboutMe {
-        margin-top: -40px;
-    } */
-    #icon {
-        top: 217px;
-        font-size: 58px;
-        text-align: center;
-    
-    }
-    #icon2 {
-        top: 371px;
-        font-size: 72px;
-
-    }
-    .skillmedia{
-        font-size: 359%;
-        position: absolute;
-        top: -23px;
-    }
-    .line-media::after,.line-media::before{
-        content: " ";
-        position: absolute; 
         width: 30%;
-        height: 3px;
-        top:1.8em;
-     }
-     .line-media::after {
-        left: 108%;
-        width: 48%;
     }
-    .line-media::before {
-        width: 48%;
-        right: 106%;
+    .line-effecAbout::before {
+        width: 30%;
+        right: 69%;
     }
-}
+    #texMe {
+        top: 175%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 78%;
+        
+    }
+    #aboutTex {
+        top: 227%;
+        left: 20%;
+        font-size: 120%;
+        width: 65%;
+        text-align: justify;
+    }
+    #img{
+        display: none;
+    }
+} 
