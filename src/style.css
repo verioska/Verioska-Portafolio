@@ -406,3 +406,32 @@ nav ul li {
     }
 
 }
+@media only screen and (min-width:1901px){
+    #img{
+        top:200%
+    }
+    #aboutTex {
+        top: 510%;
+      
+    }
+    #texTitle{
+        top:182%;
+    }
+    .line-effecAbout::before {
+        right: 54%;
+    }
+    .line-effecAbout::after {
+        left: 54%;
+        
+    }
+    .line-effecAbout::after,.line-effecAbout::before{
+        content: " ";
+        position: absolute; 
+        width: 30%;
+        height: 3px;
+        background-color: azure;
+        top: 10.2em;
+     }
+     
+
+}
