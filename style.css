@@ -347,7 +347,7 @@ nav ul li {
         display: none;
     } 
     #texTitle {
-        top: 3%;
+        top: 50%;
     }
     .line-effecAbout::after {
         left: 70%;
@@ -373,4 +373,9 @@ nav ul li {
     #img{
         display: none;
     }
+    
+.line-effecAbout::after,.line-effecAbout::before{
+ 
+    top: 5.4em;
+ }
 } 
