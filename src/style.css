@@ -116,7 +116,8 @@ nav ul li a {
 }
 .wrapper{
     margin: 0 auto;
-    width: 1170px
+    width: 1170px;
+   
 }
 
 .banner-area p{
@@ -162,14 +163,15 @@ nav ul li a {
     left: 58%;
     width: 30%;
 }
-
-#aboutTex{
+#aboutTex {
     top: 90%;
     left: 36%;
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
     font-size: 120%;
     color: azure;
+    width: 45%;
+    text-align: justify;
 }
 
 #img{
@@ -362,4 +364,74 @@ nav ul li a {
     padding: 14px;
     color: azure;
     font-size: 80px
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+
+}
+@media only screen and (max-width:767px) {
+/* .wrapper{
+        width: 90%;
+    }  */
+    /* nav{
+        display: none;
+    }  */
+    #pp-nav.right {
+       
+        position: absolute;
+        top: 48%;
+        left: 335px;
+    }
+
+    /* seccion 2 */
+    #img {
+        display: none
+    }
+    /* .line-effec::before {
+        width: 22%;
+        right: 70%;
+    }
+    .line-effec::after{
+        width: 22%;
+        left: 70%;
+    }
+    .line-effec::after, .line-effec::before {
+       
+        top: 1.0em;
+    }
+    #aboutMe {
+        margin-top: -40px;
+    } */
+    #icon {
+        top: 217px;
+        font-size: 58px;
+        text-align: center;
+    
+    }
+    #icon2 {
+        top: 371px;
+        font-size: 72px;
+
+    }
+    .skillmedia{
+        font-size: 359%;
+        position: absolute;
+        top: -23px;
+    }
+    .line-media::after,.line-media::before{
+        content: " ";
+        position: absolute; 
+        width: 30%;
+        height: 3px;
+        top:1.8em;
+     }
+     .line-media::after {
+        /* left: -534px; */
+        left: 108%;
+        width: 48%;
+    }
+    .line-media::before {
+        width: 48%;
+        right: 106%;
+    }
 }
