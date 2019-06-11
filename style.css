@@ -543,6 +543,25 @@ nav ul li {
         background-color: azure;
         top: 10.2em;
      }
-     
+
+     #icon {
+        font-size: 642%;
+        top: 393px;
+        left: 32%;
+        width: 41%;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .iconClass {
+        padding: 5%;
+    }
+
+    #texTitleSkill {
+        top: 190%;
+    }
+    .line-effecSkill::after, .line-effecSkill::before {
+        top: 10.9em;
+    }
 
 }
