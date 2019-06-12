@@ -374,7 +374,7 @@ nav ul li {
     height: 40px;
     justify-content: center;
     align-items: center;
-    color: #2c3e50;
+    color: azure;
     font-size: 18px;
     transition: 0.4s;
     border-radius: 50%
@@ -383,6 +383,9 @@ nav ul li {
     background: #2c3e50;
     color: white;
   }
+  .sm a i{
+   font-size: 25px
+  } 
   .card:hover> .front{
     transform: perspective(600px) rotateY(-180deg);
   }
@@ -400,6 +403,15 @@ nav ul li {
   }
   .card3:hover > .back{
     transform: perspective(600px) rotateY(0deg);
+  }
+  #titleProject{
+      color: azure;
+      font-size: 20px
+  }
+  #titleProjectVitrina{
+    color: azure;
+    margin-top: 7%;
+    font-size: 20px
   }
 /* Seccion Contacto */
 
