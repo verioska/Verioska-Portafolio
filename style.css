@@ -37,10 +37,10 @@ nav ul li {
 }
 
 .home-area{
-    background-image: url('./Imagenes/fondo2.jpg') ;
-    -webkit-background-size: cover;
-    background-size:cover;
-    background-position: center center;
+    background-image: url('./Imagenes/memphis-mini.png') ;
+     /* -webkit-background-size: cover;
+    background-size:cover; */
+    /* background-position: center center; */
 }
 .wrapper{
     margin: 0 auto;
@@ -304,117 +304,103 @@ nav ul li {
 } */
 
 /* Seccion Proyectos */
-
-#imgCard{
-    width: 100%;
-    /* height: 100%; */
-    cursor: pointer;
-}
-.card {
+.middle{
     position: absolute;
-    width: 20%;
-    top: 250%;
-    left: 27%;
-    height: 40%;
-    background: #4BBFC3;
-    transform: translate(-50%,-50%);
-}
-
-.card .imgBx{
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    transform-origin: bottom;
-    transition: .5s;
-    transform: translateY(0) rotateX(0deg);
-    cursor: pointer;
-}
-
-.card:hover .imgBx{
-    transform: translateY(-100%) rotateX(90deg)
-
-}
-
-.card .details{
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    height: 740%;
-    transform-origin: top;
-    background: #4BBFC3;
-    transition: .5s;
-    box-sizing: border-box;
-    padding: 20px;
- 
-    transform: translateY(100%) rotateX(-90deg);
-    cursor: pointer;
-} 
-
-.card:hover .details{
-    transform: translateY(0%) rotateX(0deg)
-}
-
-.card .details .contentCard{
-    position: absolute;
-    width: 100%;
     top: 50%;
-    left: 0px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .card{
+    cursor: pointer;
+    width: 253px;
+    height: 430px;
+    background-color: #FAFAFF;
+    border: none;
+    position: absolute;
+    top:540%;
+    left: 270px;
+  }
+  .card2{
+    cursor: pointer;
+    width: 253px;
+    height: 430px;
+    background-color: #FAFAFF;
+    border: none;
+    position: absolute;
+    top:540%;
+    left: 581px;
+  }
+  .card3{
+    cursor: pointer;
+    width: 253px;
+    height: 430px;
+    background-color: #FAFAFF;
+    border: none;
+    position: absolute;
+    top:540%;
+    left: 886px;
+  }
+  .front,.back{
+    width: 100%;
     height: 100%;
-    transform: translateY(-50%);
-    padding: 20px;
-} 
-
-.card .details .contentCard h2{
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front img{
+    height: 60%;
+      
+  }
+  .front{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .back{
+    background: #4BBFC3;
+    height: 60%;
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .back-content{
+    color: #2c3e50;
     text-align: center;
-    color: azure;
-    font-size: 18px;
-    margin-top:-10px
-} 
-
-#idP{
-    margin-top: 3%;
-    text-align: center;
-    font-size: 14px;
-    
-    
-}
-
-#iconGithub,#iconBook{
-    color: azure;
-    padding: 25%;
-    font-size: 25px;
-}
-
-.iconContent{
-    display: flex;
+    width: 100%;
+  }
+  .sm{
+    margin: 20px 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
     justify-content: center;
-    margin-top: -5%;
-   
-}
-
-#cardVitrina{
-    position: absolute;
-    width: 20%;
-    top: 250%;
-    height: 46%;
-    left: 645px;
-    background: #353A47;
-    transform: translate(-50%,-50%);
-}
-
-#cardSabores{
-    position: absolute;
-    width: 20%;
-    top: 250%;
-    height: 46%;
-    left: 950px;
-    background: #353A47;
-    transform: translate(-50%,-50%);
-} 
-
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card:hover> .front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card2:hover> .front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card3:hover> .front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .card2:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .card3:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+  }
 /* Seccion Contacto */
 
 #contactTex{
@@ -598,7 +584,7 @@ nav ul li {
     #texTitleSkill,#textProjects {
         top: 190%;
     }
-    .line-effecSkill::after, .line-effecSkill::before {
+    .line-effecSkill::after, .line-effecSkill::before,.line-effecProject::after,.line-effecProject::before{
         top: 10.9em;
     }
     #iconContactMe {
@@ -606,6 +592,18 @@ nav ul li {
         top: 368%;
         font-size: 151px;
        ;
+    }
+    .card,.card2,.card3{
+        top:823%
+    }
+    .card{
+        left: 519px;
+    }
+    .card2{
+        left: 864px;
+    }
+    .card3{
+        left: 1238px;
     }
 
 }
