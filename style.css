@@ -441,9 +441,6 @@ nav ul li {
 }
 
 
-  
-
-
  @media only screen and (max-width:767px) {
      
     nav{
@@ -503,19 +500,38 @@ nav ul li {
         display: flex;
         top: 143px;
         left: 16%;
-        /* margin-top: 214%; */
         position: absolute;
         flex-direction: row;
         flex-wrap: wrap;
-        /* max-width: 550px; */
         width: 72%;
-        /* margin: 1%; */
-        /* padding: 145px 10px; */
         justify-content: center;
         align-content: space-around;
     }
     .iconClass{
         padding: 5%
+    }
+    .card {
+        width: 223px;
+        height: 425px;
+        top: 461%;
+        left: 191px;
+    }
+    #titleProject {
+        
+        margin-top: 14%;
+    }
+    .card2 {
+        
+        width: 222px;
+        height: 430px;
+        top: 824%;
+        left: 191px;
+    }
+
+    .container {
+       
+        height: 214%;
+        
     }
 
 } 
