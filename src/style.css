@@ -3,8 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
+#menu li {
+    display:inline-block;
+    color: #000;
+  }
+  
+  /* #menu li:hover{
+    color: #000;
+  }
+  */
+  #menu li a{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    display:block;
+    color: #FFFFFF;
+    border-radius: 1em;
+    padding: 0.8em;
+  }
+  #menu li a:hover{
+    color: #D382C8;
+    text-decoration: line-through;
+  }
+  #menu{
+    position: fixed;  
+    height: 4em;
+    z-index: 70;
+    width: 100%; 
+    background-color: rgba(46, 18, 68, 0.1);
+  }
+  .navbar-default {
+    background-color: rgba(46, 18, 68, 0.6);
+    border: none;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+  }
+  
+/* 
 nav{
     position: absolute;
     top:0;
@@ -29,7 +64,7 @@ nav ul li {
     font-family: Monday;
    font-size:28px;
    letter-spacing: 1px
-}
+} */
 
 @font-face{
     font-family: Monday;
@@ -73,7 +108,7 @@ nav ul li {
     color: azure;
     font-size: 320%;
     position: relative;
-    top: 50%;
+    top: 100%;
 }
 
 .line-effecAbout::after,.line-effecAbout::before,.line-effecContact::after,.line-effecContact::before{
@@ -82,7 +117,7 @@ nav ul li {
     width: 30%;
     height: 3px;
     background-color: azure;
-    top: 4.2em;
+    top: 6.2em;
  }
  
  .line-effecAbout::before,.line-effecContact::before {
@@ -176,7 +211,7 @@ nav ul li {
     color: #4BBFC3;
     font-size: 320%;
     position: relative;
-    top: 53%;
+    top: 100%;
     -webkit-top: 53%; 
     -moz-top:53%;
 }
@@ -187,7 +222,7 @@ nav ul li {
     width: 30%;
     height: 3px;
     background-color: #4BBFC3;
-    top: 4.2em;
+    top: 6.2em;
 }
 
 .line-effecSkill::before, .line-effecProject::before {
@@ -208,7 +243,7 @@ nav ul li {
 #icon {
     font-size: 564%;
     display: flex;
-    top: 143px;
+    top: 200px;
     left: 16%;
     /* margin-top: 214%; */
     position: absolute;
@@ -422,7 +457,7 @@ nav ul li {
     color: azure;
     font-size: 320%;
     position: relative;
-    top: 50%;
+    top: 100%;
 }
 #iconContactMe{
     position: absolute;
