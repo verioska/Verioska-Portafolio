@@ -76,7 +76,7 @@ nav ul li {
     top: 50%;
 }
 
-.line-effecAbout::after,.line-effecAbout::before{
+.line-effecAbout::after,.line-effecAbout::before,.line-effecContact::after,.line-effecContact::before{
     content: " ";
     position: absolute; 
     width: 30%;
@@ -85,12 +85,12 @@ nav ul li {
     top: 4.2em;
  }
  
- .line-effecAbout::before {
+ .line-effecAbout::before,.line-effecContact::before {
      width: 30%;
      right: 58%;
  }
  
- .line-effecAbout::after {
+ .line-effecAbout::after,.line-effecContact::after {
  
      left: 58%;
      width: 30%;
@@ -169,7 +169,7 @@ nav ul li {
 
 /* Seccion de Habilidades */
 
-#texTitleSkill{
+#texTitleSkill,#textProjects{
     display:flex;
     justify-content: center;
     font-family: Monday;
@@ -181,7 +181,7 @@ nav ul li {
     -moz-top:53%;
 }
 
-.line-effecSkill::after,.line-effecSkill::before{
+.line-effecSkill::after,.line-effecSkill::before,.line-effecProject::after,.line-effecProject::before{
     content: " ";
     position: absolute; 
     width: 30%;
@@ -190,12 +190,12 @@ nav ul li {
     top: 4.2em;
 }
 
-.line-effecSkill::before {
+.line-effecSkill::before, .line-effecProject::before {
     width: 30%;
     right: 58%;
 }
 
-.line-effecSkill::after {
+.line-effecSkill::after,.line-effecProject::after  {
     left: 58%;
     width: 30%;
 }
@@ -304,19 +304,18 @@ nav ul li {
 } */
 
 /* Seccion Proyectos */
-/* 
+
 #imgCard{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     cursor: pointer;
 }
-
 .card {
     position: absolute;
-    width: 18%;
-    top: 151%;
+    width: 20%;
+    top: 250%;
     left: 27%;
-    height: 128%;
+    height: 40%;
     background: #4BBFC3;
     transform: translate(-50%,-50%);
 }
@@ -343,7 +342,7 @@ nav ul li {
     width: 100%;
     top: 0px;
     left: 0px;
-    height: 100%;
+    height: 740%;
     transform-origin: top;
     background: #4BBFC3;
     transition: .5s;
@@ -352,9 +351,9 @@ nav ul li {
  
     transform: translateY(100%) rotateX(-90deg);
     cursor: pointer;
-} */
+} 
 
-/* .card:hover .details{
+.card:hover .details{
     transform: translateY(0%) rotateX(0deg)
 }
 
@@ -366,33 +365,41 @@ nav ul li {
     height: 100%;
     transform: translateY(-50%);
     padding: 20px;
-}
+} 
 
 .card .details .contentCard h2{
     text-align: center;
     color: azure;
-}
+    font-size: 18px;
+    margin-top:-10px
+} 
 
 #idP{
-    margin-top: 10%;
+    margin-top: 3%;
+    text-align: center;
+    font-size: 14px;
+    
+    
 }
 
 #iconGithub,#iconBook{
     color: azure;
-    padding: 20%;
+    padding: 25%;
     font-size: 25px;
 }
 
 .iconContent{
     display: flex;
-    justify-content: flex-end
+    justify-content: center;
+    margin-top: -5%;
+   
 }
 
 #cardVitrina{
     position: absolute;
-    width: 18%;
-    top: 151%;
-    height: 128%;
+    width: 20%;
+    top: 250%;
+    height: 46%;
     left: 645px;
     background: #353A47;
     transform: translate(-50%,-50%);
@@ -400,18 +407,47 @@ nav ul li {
 
 #cardSabores{
     position: absolute;
-    width: 18%;
-    top: 151%;
-    height: 128%;
+    width: 20%;
+    top: 250%;
+    height: 46%;
     left: 950px;
     background: #353A47;
     transform: translate(-50%,-50%);
-} */
+} 
 
 /* Seccion Contacto */
 
+#contactTex{
+    display:flex;
+    justify-content: center;
+    font-family: Monday;
+    color: azure;
+    font-size: 320%;
+    position: relative;
+    top: 50%;
+}
+#iconContactMe{
+    position: absolute;
+    top:300%;
+    font-size: 90px;
+    width: 100%;
+    text-align: center
+  
+}
+#iconContactMe a{
+    text-decoration:none;
+    color: azure
+}
+#iconContact{
+    margin: 1%
+}
+
+
+  
+
 
  @media only screen and (max-width:767px) {
+     
     nav{
         display: none;
     } 
@@ -443,12 +479,12 @@ nav ul li {
     #img{
         display: none;
     }
-    .line-effecAbout::after,.line-effecAbout::before{
-        top: 4.0em;
+    .line-effecAbout::after,.line-effecAbout::before,.line-effecContact::after,.line-effecContact::before,.line-effecSkill::after,.line-effecSkill::before,.line-effecProject::after,.line-effecProject::before{
+        display:none
     }
     /* Seccion habilidades */
 
-    #texTitleSkill{
+    #texTitleSkill,#textProjects{
         top:78%;        
     }
 
@@ -497,6 +533,9 @@ nav ul li {
         left: 58%;
         
     }
+ 
+    
+
 }
 @media only screen and (min-width:1201px)and (max-width:1900px){
     #aboutTex {
@@ -516,7 +555,7 @@ nav ul li {
     #img{
         top:179%
     }
-    #aboutTex {
+    #aboutTex   {
         top: 330%;
         width: 42%;
       
@@ -524,7 +563,7 @@ nav ul li {
     #texMe{
         font-size: 25px
     }
-    #texTitle{
+    #texTitle,#contactTex{
         top:104%;
         font-size: 500%
     }
@@ -535,12 +574,11 @@ nav ul li {
         left: 59%;
         
     }
-    .line-effecAbout::after,.line-effecAbout::before{
+    .line-effecAbout::after,.line-effecAbout::before,.line-effecContact::after,.line-effecContact::before{
         content: " ";
         position: absolute; 
         width: 30%;
         height: 3px;
-        background-color: azure;
         top: 10.2em;
      }
 
@@ -557,11 +595,17 @@ nav ul li {
         padding: 5%;
     }
 
-    #texTitleSkill {
+    #texTitleSkill,#textProjects {
         top: 190%;
     }
     .line-effecSkill::after, .line-effecSkill::before {
         top: 10.9em;
+    }
+    #iconContactMe {
+       
+        top: 368%;
+        font-size: 151px;
+       ;
     }
 
 }
