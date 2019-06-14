@@ -6,38 +6,57 @@
 #menu li {
     display:inline-block;
     color: #000;
+    margin-top: 6px
   }
   
   /* #menu li:hover{
     color: #000;
-  }
-  */
+  } */
+ 
   #menu li a{
     font-family: 'Josefin Sans', sans-serif;
     color: #000;
     display:block;
     color: #FFFFFF;
+    font-weight:bold;
+    /* color: #6c7c8d; */
     border-radius: 1em;
     padding: 0.8em;
   }
+ 
   #menu li a:hover{
     color: #D382C8;
-    text-decoration: line-through;
-  }
-  #menu{
+    /* text-decoration: line-through; */
+}
+nav ul img{
+    position: absolute;
+    right: 87%;
+    top: -78%;
+    height: 189%;
+}
+#r{
+    right: 87%;
+}
+
+#menu{
     position: fixed;  
     height: 4em;
     z-index: 70;
     width: 100%; 
-    background-color: rgba(46, 18, 68, 0.1);
-  }
-  .navbar-default {
+    background-color: rgba(46, 18, 68, 0.37);
+}
+
+.navbar-default {
     background-color: rgba(46, 18, 68, 0.6);
     border: none;
-  }
-  .navbar-default .navbar-nav>li>a {
+}
+
+.navbar-default .navbar-nav>li>a {
     color: #FFFFFF;
-  }
+}
+.navbar-left2{
+    display: none
+}
   
 /* 
 nav{
@@ -73,6 +92,7 @@ nav ul li {
 
 .home-area{
     background-image: url('./Imagenes/memphis-mini.png') ;
+  
      /* -webkit-background-size: cover;
     background-size:cover; */
     /* background-position: center center; */
@@ -477,22 +497,24 @@ nav ul li {
 
 
  @media only screen and (max-width:767px) {
-     
-    nav{
-        display: none;
-    } 
+   
+    .navbar-left2{
+        display: block
+    }
+    .navbar-left{
+        display: none
+    }
+    #r {
+        right: 70%;
+    }
+    nav ul img {
+       
+        right: 71%;
+    }
     #texTitle{
-        top: 50%;
+        top: 144%;
     }
    
-    .line-effecAbout::after {
-        left: 70%;
-        width: 30%;
-    }
-    .line-effecAbout::before {
-        width: 30%;
-        right: 69%;
-    }
     #texMe {
         top: 175%;
         font-family: 'Josefin Sans', sans-serif;
@@ -500,7 +522,7 @@ nav ul li {
         
     }
     #aboutTex {
-        top: 227%;
+        top: 285%;
         left: 20%;
         font-size: 120%;
         width: 65%;
@@ -515,32 +537,14 @@ nav ul li {
     /* Seccion habilidades */
 
     #texTitleSkill,#textProjects{
-        top:78%;        
+        top:137%;        
     }
 
-    .line-effecSkill::after,.line-effecSkill::before{
-        top: 5.6em;
-    }
-    .line-effecSkill::after {
-        left: 74%;
-        width: 25%;
-    }
-    .line-effecSkill::before {
-        width: 25%;
-        right: 74%;
-    }
 
     #icon {
-        font-size: 564%;
+        font-size: 461%;
         display: flex;
-        top: 143px;
-        left: 16%;
-        position: absolute;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 72%;
-        justify-content: center;
-        align-content: space-around;
+        top: 195px;
     }
     .iconClass{
         padding: 5%
@@ -562,11 +566,19 @@ nav ul li {
         top: 824%;
         left: 191px;
     }
-
     .container {
        
         height: 214%;
         
+    }
+    #iconContactMe {
+        top: 300%;
+        font-size: 70px;
+        
+    }
+    #contactTex {
+        
+        top: 162%;
     }
 
 } 
